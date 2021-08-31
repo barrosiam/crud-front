@@ -1,0 +1,38 @@
+.botao{   
+    color: var(--branco);
+    background-color: var(--salmao-escuro);
+
+    text-align: center;
+    display: block;
+
+    width: 70%;
+    max-width: 350px; 
+  
+    margin: 1.5rem;
+    padding: 1rem 2rem;  
+
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 20px;
+    box-sizing: border-box; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btnBase{
+
+}
+.btn_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.botao:hover{
+    background-color: var(--vermelho-escuro);
+}
+
+/* @media screen and (min-width:1024px){ */
+@media  (min-width:1024px){
+    
+    .btn_container{
+        flex-direction: row;         
+   }}

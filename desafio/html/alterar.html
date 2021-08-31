@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="../css/geral/reset.css" rel="stylesheet">
+    <link href="../css/geral/base.css" rel="stylesheet">
+    <link href="../css/geral/cabecalho.css" rel="stylesheet" >
+    <link href="../css/cadastrar/chamada.css" rel="stylesheet" >   
+    <link href="../css/cadastrar/forms.css" rel="stylesheet" >
+    <link href="../css/consultar/forms-consulta.css" rel="stylesheet" >
+    <link href="../css/cadastrar/imagem.css" rel="stylesheet" >
+    <link href="../css/geral/botao.css" rel="stylesheet" >
+    <link href="../css/geral/rodape.css" rel="stylesheet" >
+    <link href="../css/cadastrar/container.css" rel="stylesheet" >
+    <link href="../css/consultar/pesquisa.css" rel="stylesheet" >
+
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script type = "module" src="../js/service/consulta.js"> </script>
+    <script type = "module" src="../js/app.js"> </script>
+    <title>Alterar</title>
+</head>
+<body>
+    <body>
+        <header class="cabecalho container">
+            <p class="cabecalho_titulo">ire et vivet</p>      
+            <nav class="cabecalho_menu">
+                <button id="btn_mobile"><span class="iconify" data-icon="icon-park-outline:hamburger-button"></span><a href="index.html"></a></button>
+                <ul class="menu">
+                    <li class="cabecalho_link"><a href="cadastrar.html">Cadastrar</a></li>
+                    <li class="cabecalho_link"><a href="consultar.html">Consultar</a></li>              
+                    <li class="cabecalho_link"><a href="alterar.html">Atualizar</a></li>
+                </ul>        
+            </nav>
+        </header> 
+       <main>  
+         <section class="chamada container">
+             <h1 class="chamada_titulo">alteração de livros</h1>  
+        </section> 
+        <section class="pesquisa__container">
+            <label for="pesquisa">Insira o número de identificação do livro:</label>
+            <input type="text" id="pesquisa" name="pesquisa" required="required">   
+            <div class="btn_container">
+                <button id="btnConsultar" class="botao btnBase">Consultar</input>   
+                <button class="btnLimpar botao btnBase" value="reset">Limpar</button>   
+            </div>     
+        </section>
+        <div class="container__principal__consulta">          
+         <section class="form_componentes container">                          
+            <form>
+                <label for="titulo">Título</label>
+                <input type="text" class="titulo" name="titulo"  placeholder="Ex: Quem é Você Alasca?" required="required">
+                <label for="anoLancamento">Ano de Lançamento</label>
+                <input type="number" class="anoLancamento" name="anoLancamento" placeholder="Ex: 2010" required="required">
+                <label for="autor">Autor</label>
+                <input type="text" class="autor" name="autor" placeholder="Ex: John Green" required="required">
+                <label for="genero">Gênero</label>
+                <input type="text" class="genero" name="genero" placeholder="Ex: Suspense" required="required">
+                <label for="editora">Editora</label>
+                <input type="text" class="editora" name="editora" placeholder="Ex: Editora Record" required="required"> 
+                <label for="edicao">Edição</label>
+                <input type="number" class="edicao" name="edicao" placeholder="Ex: 10" required="required">             
+                <label for="status">Status</label>
+                <input type="number" class="status" name="status" placeholder="Ex: 1" required="required">             
+            </form>
+            <div class="btn_container">
+                <button id="btnAlterar" class="botao btnBase" >Alterar</button>   
+                <button id="btnDelete"   class="botao btnBase" >Deletar</button>   
+             </div>  
+             <div class="modal">      
+                <div class="modal-content">
+                <span class="fechaModal">&times;</span>
+                <p class="textoModal">Seu cadastro não foi realizado, tente novamente.</p>
+                </div>    
+            </div>           
+         </section>     
+         <section class="imagem_lateral">
+            <img src="../images//Book lover.gif" alt="Imagem de garoto sentado lendo livros">  
+        </section>       
+        </div>
+     </main>
+     
+     <footer class="rodape container">
+        <p class="rodape_titulo">ire et vivet</p> 
+        <ul class="rodape_redes-sociais">
+            <li><a href="#" > <img src="../images/icons8-f-do-facebook.svg" alt="Ícone do Facebook" class="rodape_icone">   </a></li>
+            <li><a href="#" > <img src="../images/instagram.svg" alt="Ícone do instagram" class="rodape_icone"> </a></li>
+            <li><a href="#" > <img src="../images/twitter.svg" alt="Ícone do Twitter" class="rodape_icone"> </a></li>
+        </ul>        
+    </footer>
+  
+    </body>
+</body>
+</html>
