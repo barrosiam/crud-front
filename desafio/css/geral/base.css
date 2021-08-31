@@ -1,0 +1,58 @@
+:root {
+    --branco:  #FFFFFF;
+    --vermelho-escuro:#833329;
+    --salmao-claro-color: #F38375;
+    --salmao-escuro:#EF6351;
+    --poppins:'Poppins', sans-serif;
+    --yanone: 'Yanone Kaffeesatz', sans-serif;
+}
+
+body{
+    font-family: var(--poppins);
+    box-sizing: border-box;   
+    margin: 0;
+    color: var(--vermelho-escuro);     
+}
+
+.container {
+    padding-right: 6%;
+    padding-left: 6%;
+} 
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+ 
+  .fechaModal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .fechaModal:hover,
+  .fechaModal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

@@ -1,0 +1,23 @@
+.chamada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--vermelho-medio);
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 4rem;
+   
+}
+
+/*rever o que importa aqui*/
+.chamada_titulo{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2.7rem;
+    font-style: normal;
+    font-weight: normal;
+    
+    justify-content: center;
+    display:flex;
+}
